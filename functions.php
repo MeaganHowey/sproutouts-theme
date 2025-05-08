@@ -9,9 +9,11 @@
  * @since 0.1.0
  */
 
-define( 'SP_THEME_VERSION', '0.1.2' );
+define( 'SP_THEME_VERSION', '0.1.3' );
 
+//theme setup
 function sp_theme_setup() {
+
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
   add_theme_support('menus');

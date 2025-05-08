@@ -34,7 +34,6 @@ The following are conventions and instructions related to the development of the
 | JavaScript Functions | CamelCase, prefixed with sp or wrapped in sp object namespace | spInitSlider() or sp.utils.scrollTo() |
 | Wordpress Options / Transients | Use sp_ prefix for any stored option/transient key in the database. | sp_theme_options |
 | Custom Post Types / Taxonomies | Use sp_ prefix. Lowercase with underscores. | sp_testimonial, sp_service_category |
-| Text Domain | For translations, use theme slug (e.g. sproutouts-theme) | __('Text', 'sproutouts-theme') |
 | @package Name (DocBlocks) | PascalCase, short and branded. | SPTheme or SproutoutsTheme |
 | Constants | UPPERCASE_WITH_UNDERSCORES | SP_THEME_VERSION |
 
