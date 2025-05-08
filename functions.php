@@ -9,7 +9,7 @@
  * @since 0.1.0
  */
 
-define( 'SP_THEME_VERSION', '0.1.0' );
+define( 'SP_THEME_VERSION', '0.1.2' );
 
 function sp_theme_setup() {
   add_theme_support('title-tag');
