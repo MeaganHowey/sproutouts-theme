@@ -3,8 +3,8 @@
 Contributors: Meagan Howey, Sproutouts Team\
 Requires at least: Wordpress 6.8.1\
 Requires PHP: 8.2.28\
-Documentation URI: https://sproutouts.com/sproutouts-theme\
-Author URI: https://sproutouts.com\
+Documentation URI: https://sproutouts.com/sproutouts-theme
+Author URI: https://sproutouts.com
 
 ## Description
 
