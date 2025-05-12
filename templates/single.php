@@ -5,15 +5,16 @@
  * @package SPTheme
  * @since 0.1.0
  */
-?>
 
-<?php
-// Start the loop to display the single post
-while ( have_posts() ) :
-    the_post();
+get_header(); ?>
 
-    // Output the post content
-    the_content();
+<main id="main" class="site-main" role="main">
+    <?php
+    while ( have_posts() ) :
+        the_post();
+        the_content();
+    endwhile;
+    ?>
+</main>
 
-endwhile;
-?>
+<?php get_footer(); ?>

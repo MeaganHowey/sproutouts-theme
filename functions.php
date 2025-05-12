@@ -9,7 +9,7 @@
  * @since 0.1.0
  */
 
-define( 'SP_THEME_VERSION', '0.1.3' );
+define( 'SP_THEME_VERSION', '0.1.4' );
 
 //theme setup
 function sp_theme_setup() {

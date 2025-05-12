@@ -5,27 +5,32 @@
  * @package SPTheme
  * @since 0.1.0
  */
-?>
 
-<?php
-// Check if pagination function exists before starting the loop
-if (function_exists('the_posts_pagination')) :
-    // Pagination for archives
-    the_posts_pagination();
-endif;
+get_header(); ?>
 
-// Start the loop to display posts in the archive
-if ( have_posts() ) :
+<main id="main" class="site-main" role="main">
 
-    while ( have_posts() ) :
-        the_post();
+    <?php
+    if ( have_posts() ) :
 
-        // Output the content for each post in the archive
-        the_content();
+        while ( have_posts() ) :
+            the_post();
 
-    endwhile;
+            // Output the content for each post in the archive
+            the_content();
 
-else :
-    echo '<p>No posts found.</p>';
-endif;
-?>
+        endwhile;
+
+        // Pagination
+        if ( function_exists( 'the_posts_pagination' ) ) :
+            the_posts_pagination();
+        endif;
+
+    else :
+        echo '<p>No posts found.</p>';
+    endif;
+    ?>
+
+</main>
+
+<?php get_footer(); ?>
