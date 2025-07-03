@@ -29,7 +29,7 @@ The following are conventions and instructions related to the development of the
 | File Names | Kebab-case, optionally prefixed with sp- if logic could be reused or is general. | sp-footer-copyright.php, functions.php |
 | Folder Names | Lowercase and kebab-case. Descriptive to function or context. | integrations/, templates/ |
 | Shortcode Functions | Prefixed with sp_, usually include the word shortcode | sp_shortcode_image_grid() |
-| Template Part Files | Kebab-case. Optional sp- prefix for custom components | sp-custom-banner.php |
+| Template Part Files | Kebab-case. Use sp- prefix for custom components | sp-custom-banner.php |
 | Custom CSS Class Names | Use sp- as prefi for all theme-defined css classes to avoid collisions | .sp-parallax |
 | JavaScript Functions | CamelCase, prefixed with sp or wrapped in sp object namespace | spInitSlider() or sp.utils.scrollTo() |
 | Wordpress Options / Transients | Use sp_ prefix for any stored option/transient key in the database. | sp_theme_options |
@@ -43,3 +43,36 @@ The file structure includes a few key folders that are explained below:
 - Assets: Includes general css and js files as well as media like images, videos, and fonts.
 - Includes: Includes theme based code modules.
 - Integrations: Includes integration based code modules. (e.g. integrations/divi/footer-copyright/ ** in here is both a sp-footer-copyright.php file and it's matching sp-footer-copyright.js file. JS file is generally enqueued within the matching php file.)
+```
+├── archive.php
+├── assets
+│   ├── css
+│   ├── fonts
+│   ├── images
+│   └── js
+├── footer.php
+├── functions.php
+├── header.php
+├── includes
+|   ├── setup 
+│       ├── sp-theme-support.php
+│       └── sp-customizer.php
+│       └── sp-performance.php
+├── index.php
+├── integrations
+│   └── divi
+│       ├── mods (Code that modifies or builds on existing divi modules and functionality)
+|         └── sp-change-existing-module-of-x-class
+|           ├── sp-change-existing-module-of-x-class.php
+|           └── sp-change-existing-module-of-x-class.js
+│       └── modules (Entirely new custom Divi modules)
+│         └── sp-new-module-example
+|           ├── sp-new-module-example.php
+|           └── sp-new-module-example.js
+├── LICENSE
+├── page.php
+├── README.md
+├── screenshot.png
+├── single.php
+└── style.css
+```
