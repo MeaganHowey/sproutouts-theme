@@ -9,12 +9,12 @@
  * @since 0.1.0
  */
 
-define( 'SP_THEME_VERSION', '0.1.9' );
+define( 'SP_THEME_VERSION', '0.1.11' );
 
-//theme setup
-require_once get_template_directory() . '/includes/setup/sp-theme-support.php';
+//theme setup, performance, and customizer settings.
+require_once get_template_directory() . '/includes/setup/loader.php';
 
-//Perfomance Enhancements
-require_once get_template_directory() . '/includes/setup/sp-performance.php';
+//theme customizer setup
+require_once get_template_directory() . '/includes/customizer/loader.php';
 
  ?>
