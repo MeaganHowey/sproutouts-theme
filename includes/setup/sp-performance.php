@@ -57,7 +57,7 @@ add_action( 'init', 'sp_cleanup_head' );
 add_filter( 'xmlrpc_enabled', '__return_false' );
 
 // ----------------------------
-// Disable WP Block Patterns UI (added WP 6.5+)
+// Disable WP Block Patterns UI (added WP 6.5)
 // ----------------------------
 
 function sp_disable_wp_block_patterns_ui() {

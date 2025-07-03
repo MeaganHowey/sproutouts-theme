@@ -9,20 +9,12 @@
  * @since 0.1.0
  */
 
-define( 'SP_THEME_VERSION', '0.1.8' );
+define( 'SP_THEME_VERSION', '0.1.9' );
 
 //theme setup
-function sp_theme_setup() {
-
-  add_theme_support('title-tag');
-  add_theme_support('post-thumbnails');
-  add_theme_support('menus');
-  remove_theme_support( 'core-block-patterns' );
-
-}
-add_action('after_setup_theme', 'sp_theme_setup');
+require_once get_template_directory() . '/includes/setup/sp-theme-support.php';
 
 //Perfomance Enhancements
-require_once get_template_directory() . '/includes/sp-performance.php';
+require_once get_template_directory() . '/includes/setup/sp-performance.php';
 
  ?>
