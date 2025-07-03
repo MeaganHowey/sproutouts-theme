@@ -11,10 +11,9 @@
 
 define( 'SP_THEME_VERSION', '0.1.10' );
 
-//theme setup
+//theme setup, performance, and customizer settings.
 require_once get_template_directory() . '/includes/setup/sp-theme-support.php';
-
-//Perfomance Enhancements
 require_once get_template_directory() . '/includes/setup/sp-performance.php';
+require_once get_template_directory() . '/includes/setup/sp-customizer.php';
 
  ?>
