@@ -52,6 +52,14 @@ function sp_cleanup_head() {
 add_action( 'init', 'sp_cleanup_head' );
 
 // ----------------------------
-// Disable XML-RPC (optional)
+// Disable XML-RPC
 // ----------------------------
 add_filter( 'xmlrpc_enabled', '__return_false' );
+
+// ----------------------------
+// Unregister WP Block Patterns
+// ----------------------------
+
+add_action( 'enqueue_block_editor_assets', function() {
+    wp_dequeue_script( 'wp-block-patterns' );
+}, 100 );
