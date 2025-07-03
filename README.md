@@ -49,15 +49,14 @@ The file structure includes a few key folders that are explained below:
 │   ├── css
 │   ├── fonts
 │   ├── images
-│   └── js
+│   └── js (JS snippets that aren't tied to a specific php file)
+│     └── sp_dynamic_copyright_year.js
 ├── footer.php
 ├── functions.php
 ├── header.php
 ├── includes
-|   ├── setup 
-│       ├── sp-theme-support.php
-│       └── sp-customizer.php
-│       └── sp-performance.php
+|   ├── setup (Performance, theme support, etc.)
+│   └── customizer (Theme Customizer Settings)
 ├── index.php
 ├── integrations
 │   └── divi
