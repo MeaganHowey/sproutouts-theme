@@ -9,7 +9,7 @@
  * @since 0.1.0
  */
 
-define( 'SP_THEME_VERSION', '0.1.9' );
+define( 'SP_THEME_VERSION', '0.1.10' );
 
 //theme setup
 require_once get_template_directory() . '/includes/setup/sp-theme-support.php';
