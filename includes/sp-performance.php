@@ -57,9 +57,11 @@ add_action( 'init', 'sp_cleanup_head' );
 add_filter( 'xmlrpc_enabled', '__return_false' );
 
 // ----------------------------
-// Unregister WP Block Patterns
+// Disable WP Block Patterns UI (added WP 6.5+)
 // ----------------------------
 
-add_action( 'enqueue_block_editor_assets', function() {
-    wp_dequeue_script( 'wp-block-patterns' );
-}, 100 );
+function sp_disable_wp_block_patterns_ui() {
+  remove_action( 'admin_menu', 'wp_add_admin_pattern_menu' );
+  remove_action( 'admin_init', 'wp_initialize_theme_patterns' );
+}
+add_action( 'init', 'sp_disable_wp_block_patterns_ui' );
