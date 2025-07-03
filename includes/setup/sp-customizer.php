@@ -29,7 +29,7 @@
      array(
        'label'    => __( 'Site Background Color ', 'sp'),
        'section'  => 'sp_colors',
-       'settings' => 'sp_background_color',
+       'settings' => 'sp_site_background_color',
      )
    ));
  }
