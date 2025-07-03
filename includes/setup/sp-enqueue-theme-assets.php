@@ -9,10 +9,10 @@
  function sp_enqueue_theme_assets() {
 
    //enqueue dynamic copyright year
-   wp_enqueue_script('sp-dynamic-copyright-year', get_stylesheet_directory_uri() . '/assets/js/sp_dynamic_copyright_year.js', array('jquery'), null, true);
+   wp_enqueue_script('sp-dynamic-copyright-year', get_stylesheet_directory_uri() . '/assets/js/sp-dynamic-copyright-year.js', array('jquery'), null, true);
 
  }
 
  add_action('wp_enqueue_scripts', 'sp_enqueue_theme_assets')
 
- ?> 
+ ?>
