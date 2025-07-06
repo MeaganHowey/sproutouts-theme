@@ -24,12 +24,7 @@ function sp_output_customizer_css() {
   // ------
   if(get_theme_mod('sp_disable_right_click_on_images')) {
 
-    echo '
-        /*Stop browser from being able to right-click and steal images*/
-        img {
-          pointer-events: none;
-        }
-    ';
+    echo '<style> img { pointer-events: none; } </style>';
   }
 }
 add_action( 'wp_head', 'sp_output_customizer_css' );
