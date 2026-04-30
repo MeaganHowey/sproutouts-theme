@@ -24,5 +24,8 @@ This theme's conventions are based on [Wordpress Best Practices](https://develop
 
 ### Naming Conventions
 
-| Element | Convention | Example |
-|---------|------------|---------|
+| Element | Prefix | Structure | Example |
+|---------|--------|-----------|---------|
+| Folders | none | lower-kebab-case | testimonials |
+| Files (non-main) | sp-st | lower-kebab-case | sp-st-example.php |
+| Functions (PHP) | sp_st | lower_snake_case | sp_st_example_function() |
