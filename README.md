@@ -24,8 +24,13 @@ This theme's conventions are based on [Wordpress Best Practices](https://develop
 
 ### Naming Conventions
 
-| Element | Prefix | Structure | Example |
+| Element | Prefix/Namespace | Structure | Example |
 |---------|--------|-----------|---------|
 | Folders | none | lower-kebab-case | testimonials |
 | Files (non-main) | sp-st | lower-kebab-case | sp-st-example.php |
-| Functions (PHP) | sp_st | lower_snake_case | sp_st_example_function() |
+| Global Variables | sp_st (PHP) / spSt (JS) | lower_snake_case (PHP) / camelCase (JS) | sp_st_example_global_variable (PHP) / spStExampleGlobalVariable (JS) |
+| Variables | Namespace | lower_snake_case (PHP) / camelCase (JS) | example_variable (PHP) / exampleVariable (JS) |
+| Constants | Namespace | SCREAMING_SNAKE_CASE | SP_ST_EXAMPLE_CONSTANT |
+| Classes | Namespace | Capital_Snake_case (PHP) / CapitalCamelCase (JS) | Class_Name (PHP) ClassName (JS) |
+
+
