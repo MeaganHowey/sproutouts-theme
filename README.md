@@ -24,6 +24,11 @@ This theme's conventions are based on [Wordpress Best Practices](https://develop
 
 ### Naming Conventions
 
+#### Namespaces
+
+PHP: namespace Sproutouts\Sproutouts_Theme\Sub_Namespace
+JS: var SproutoutsTheme = {} (I believe we will only need the product name as a namespace, as I am not anticipating subnamespaces for JS and having a parent class gets ugly quick.)
+
 | Element | Prefix/Namespace | Structure | Example |
 |---------|--------|-----------|---------|
 | Folders | none | lower-kebab-case | testimonials |
@@ -31,6 +36,10 @@ This theme's conventions are based on [Wordpress Best Practices](https://develop
 | Global Variables | sp_st (PHP) / spSt (JS) | lower_snake_case (PHP) / camelCase (JS) | sp_st_example_global_variable (PHP) / spStExampleGlobalVariable (JS) |
 | Variables | Namespace | lower_snake_case (PHP) / camelCase (JS) | example_variable (PHP) / exampleVariable (JS) |
 | Constants | Namespace | SCREAMING_SNAKE_CASE | SP_ST_EXAMPLE_CONSTANT |
-| Classes | Namespace | Capital_Snake_case (PHP) / CapitalCamelCase (JS) | Class_Name (PHP) ClassName (JS) |
+| Classes | Namespace | Capital_Snake_Case (PHP) / CapitalCamelCase (JS) | Class_Name (PHP) ClassName (JS) |
+| Functions | Namespace | lower_snake_case (PHP) / camelCase (JS) | example_function() (PHP) / exampleFunction() (JS) |
+| Hooks | sp_st (PHP) / spSt (JS) | lower_snake_case (PHP) / camelCase (JS) | sp_st_example_hook_function (PHP) / spStExampleHookFunction (JS) |
+
+
 
 
